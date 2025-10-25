@@ -27,4 +27,6 @@ jobs:
       run: black --check .
 
     - name: 🧪 Run tests
-      run: pytest -v
+      run: |
+        export PYTHONPATH=.
+        pytest -v
